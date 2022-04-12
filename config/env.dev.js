@@ -30,7 +30,7 @@ if (!domain) {
 //     );
 // }
 
-const clientOrigins = ['http://localhost:3000'];
+const clientOrigins = ['http://localhost:3000', 'https://aesthetic-semifreddo-67176a.netlify.app'];
 
 module.exports = {
     audience,
