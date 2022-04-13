@@ -29,8 +29,15 @@ if (!domain) {
 //         '.env is missing the definition of a APP_ORIGIN environmental variable'
 //     );
 // }
+let clientOrigins = '';
 
-const clientOrigins = ['http://localhost:3000', 'https://aesthetic-semifreddo-67176a.netlify.app'];
+if(process.env.NODE_DEV === 'dev') {
+    clientOrigins = 'http://localhost:3000'
+} else {
+    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app'
+}
+
+
 
 module.exports = {
     audience,

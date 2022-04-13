@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const { clientOrigins } = require('./config/env.dev');
 
-
+console.log(process.env.NODE_ENV)
 app.use(cors({ origin: clientOrigins }));
 app.use(express.json());
 
