@@ -34,7 +34,7 @@ let clientOrigins = '';
 if(process.env.NODE_DEV === 'dev') {
     clientOrigins = 'http://localhost:3000'
 } else if (process.env.NODE_DEV === 'production') {
-    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app'
+    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app/'
 }
 
 
