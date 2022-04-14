@@ -20,10 +20,12 @@ if (!domain) {
 
 let clientOrigins = '';
 
-if(process.env.NODE_DEV === 'dev') {
+if(process.env.NODE_ENV === 'dev') {
     clientOrigins = 'http://localhost:3000'
-} else if (process.env.NODE_DEV === 'production') {
-    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app/'
+} 
+
+if (process.env.NODE_ENV === 'production') {
+    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app'
 }
                    
 module.exports = {
