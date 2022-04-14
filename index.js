@@ -9,6 +9,10 @@ console.log(process.env.NODE_ENV)
 app.use(cors({ origin: clientOrigins }));
 app.use(express.json());
 
+app.use('./', (req, res) => {
+  res.send('hi')
+})
+
 app.use('/', require('./routes/taskList'));
 app.use('/', require('./routes/day'));
 
