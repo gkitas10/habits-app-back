@@ -18,31 +18,14 @@ if (!domain) {
     );
 }
 
-// if (!serverPort) {
-//     throw new Error(
-//         '.env is missing the definition of a API_PORT environmental variable'
-//     );
-// }
+let clientOrigins = '';
 
-// if (!clientOriginUrl) {
-//     throw new Error(
-//         '.env is missing the definition of a APP_ORIGIN environmental variable'
-//     );
-// }
-
-// let clientOrigins = '';
-
-// if(process.env.NODE_DEV === 'dev') {
-//     clientOrigins = 'http://localhost:3000'
-// } else if (process.env.NODE_DEV === 'production') {
-//     clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app/'
-// }
-
-let clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app'
-                     
-
-
-
+if(process.env.NODE_DEV === 'dev') {
+    clientOrigins = 'http://localhost:3000'
+} else if (process.env.NODE_DEV === 'production') {
+    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app/'
+}
+                   
 module.exports = {
     audience,
     domain,
