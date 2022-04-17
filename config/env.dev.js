@@ -25,7 +25,7 @@ if(process.env.NODE_ENV === 'dev') {
 } 
 
 if (process.env.NODE_ENV === 'production') {
-    clientOrigins = 'https://aesthetic-semifreddo-67176a.netlify.app'
+    clientOrigins = 'https://habits-app-front.herokuapp.com'
 }
                    
 module.exports = {
